@@ -1,0 +1,15 @@
+/*隐藏shopping_menu_box*/
+.shopping_menu_box{
+	display:none;
+}
+.shopping_menu{
+	cursor:pointer;
+}
+.shopping_menu:hover .shopping_menu_box{
+	display:block;
+}
+
+.main>.w{
+	text-align:center;
+	padding:50px 0;
+}

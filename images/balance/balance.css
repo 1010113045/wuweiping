@@ -1,0 +1,236 @@
+.header{
+	border-bottom:1px solid #D8D8D8;
+}
+.header>.w>.img{
+	float:right;
+	margin:30px 0;
+}
+
+
+.main{
+	background-color:#fff;
+	margin:50px auto;
+}
+.main>.w>.box{
+	width:100%;
+	height:500px;
+	border:1px solid #E8E8E8;
+}
+.main>.w>.box>.title{
+	width:95%;
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #E8E8E8;
+	font-weight:bold;
+	font-size:18px;
+	color:#585858;
+	margin:15px auto;
+}
+.main>.w>.fr>.box .hint{
+	padding-left:10px;
+	color:#989898;
+}
+
+
+/*-----------------------------收货地址开始*/
+.main>.w>.address>.address_cent{
+	width:100%;
+	height:300px;
+}
+.main>.w>.address>.address_cent>.smallBox{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	padding:5px 0;
+}
+.main>.w>.address>.address_cent>.smallBox>div{
+	display:inline-block;
+	width:100px;
+	height:100%;
+	text-align:right;
+	padding-left:100px;
+}
+.main>.w>.address>.address_cent>.smallBox>input{
+	width:236px;
+	height:30px;
+	padding-left:10px;
+	border:1px solid #D8D8D8;
+}
+.main>.w>.address>.address_cent>.smallBox select{
+	display:inline-block;
+	height:30px;
+	width:80px;
+	border:1px solid #D8D8D8;
+}
+.main>.w>.address>.address_cent>.smallBox>input[type="checkbox"]{
+	width:12px;
+	height:12px;
+}
+.main>.w>.address>.address_cent>.smallBox.btn>input{
+	width:120px;
+	height:35px;
+	border-radius:5px;
+	background-color:#ff4281;
+	font-size:16px;
+	color:#fff;
+	cursor:pointer;
+}
+.main>.w>.address>.address_cent>.smallBox.btn>input[type="reset"]{
+	color:#ff4281;
+	background-color:#fff;
+	border:1px solid #ff4281;
+}
+
+/*-----------------------------付款方式*/
+.main>.w>.payment{
+	height:220px;
+	margin:20px auto;
+}
+.main>.w>.payment>.fl{
+	width:30%;
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	position:relative;
+}
+.main>.w>.payment>.fl>span{
+	display:block;
+	background-color:red;
+	height:30px;
+	line-height:30px;
+	border-radius:30px 20px 30px 0;
+	padding:0 8px;
+	color:#fff;
+	position:absolute;
+	top:0;
+	right:30%;
+}
+.main>.w>.payment>.remark{
+	width:60%;
+	height:30px;
+	line-height:30px;
+	float:left;
+	padding-left:100px;
+}
+.main>.w>.payment input{
+	width:15px;
+	height:15px;
+}
+.main>.w>.payment img{
+	width:118px;
+	height:32px;
+}
+
+
+/*-----------------------------商品确认信息*/
+/*公共部分样式*/
+.col-2{
+	width:200px;
+	text-align:center;
+}
+.col-3{
+	width:400px;
+	padding-left:50px;
+}
+
+
+
+.main>.w>.pays_goods{
+	height:600px;
+}
+.main>.w>.pays_goods>.title>a{
+	float:right;
+}
+
+
+/*列表标题*/
+.main>.w>.pays_goods>ul.listS{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background-color:#fff;
+}
+.main>.w>.pays_goods>ul.listS>li{
+	float:left;
+	text-align:center;
+}
+/*全部商品列表*/
+.main>.w>.pays_goods>.allGoods{
+	width:100%;
+	background:#D8D8D8;
+}
+.main>.w>.pays_goods>.allGoods>ul{
+	width:100%;
+	height:120px;
+	line-height:120px;
+	background-color:#fff;
+}
+.main>.w>.pays_goods>.allGoods>ul>li{
+	float:left;
+}
+
+/*商品信息*/
+.main>.w>.pays_goods>.allGoods>ul>li.col-3{
+	line-height:120px;
+}
+.main>.w>.pays_goods>.allGoods>ul>li.col-3>img{
+	margin:0 10px;
+	border:1px solid #F5F5F5;
+}
+
+/*单价*/
+.main>.w>.pays_goods>.allGoods>ul>li>p{
+	width:100%;
+	height:30px;
+}
+.main>.w>.pays_goods>.allGoods>ul>li>p{
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+/*数量*/
+.main>.w>.pays_goods>.allGoods>ul>li.number>button{
+	width:20px;
+	height:20px;
+	border-radius:5px;
+	color:#fff;
+	cursor:pointer;
+}
+.main>.w>.pays_goods>.allGoods>ul>li.number>input{
+	width:30px;
+	height:20px;
+	text-align:center;
+	background-color:#fff6f9;
+}
+
+/*产品总价*/
+.main>.w>.pays_goods>.allGoods>ul>li.total{
+	font-weight:bold;
+	font-size:16px;
+}
+
+.main>.w>.pays_goods>.account{
+	width:93%;
+	height:50px;
+	line-height:50px;
+	margin:0 auto;
+	margin-top:50px;
+	padding-right:105px;
+	text-align:right;
+	border-top:1px solid #f5f5f5;
+}
+.main>.w>.pays_goods>.account>span:nth-child(2){
+	display:inline-block;
+	width:120px;
+	height:50px;
+	text-align:left;
+	color:#FF4281;
+	font-size:18px;
+}
+.main>.w>.pays_goods>.account>a{
+	padding:10px 20px;
+	color:#fff;
+	border-radius:5px;
+	background-color: #ff4281;
+}

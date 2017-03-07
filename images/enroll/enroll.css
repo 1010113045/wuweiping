@@ -1,0 +1,138 @@
+.main{
+	background-color:#fff;
+}
+.header{
+	border-bottom:1px solid #D8D8D8;
+}
+.header>.w>.icon_img{
+	float:right;
+	margin:30px 0;
+}
+.main>.w{
+	padding-top:100px;
+}
+.main>.w>.fl{
+	width:50%;
+	height:500px;
+	text-align:center;
+	position:relative;
+}
+.main>.w>.fl::before{
+	content:"";
+	width:1px;
+	height:400px;
+	background-color:#D8D8D8;
+	position:absolute;
+	right:0;
+}
+
+
+.main>.w>.fr{
+	width:50%;
+	height:500px;
+	
+}
+.main>.w>.fr>form{
+	width:400px;
+	height:400px;
+	padding-left:80px;
+}
+.font_title{
+	width:280px;
+	padding-bottom:20px;
+}
+.font_title>h3{
+	display:inline-block;
+}
+.font_title>span{
+	float:right;
+	color:#585858;
+}
+.font_title>span>a{
+	font-size:14px;
+	color:#ff4281;
+}
+.main>.w>.fr>form input{
+	width:270px;
+	height:35px;
+	border:1px solid #D8D8D8;
+	padding-left:10px;
+}
+.font_name,.font_pwd,.font_pwd2,.regulations,.btn{
+	padding:15px 0;
+}
+.main>.w>.fr>form>.regulations>input{
+	width:12px;
+	height:12px;
+	margin-right:5px;
+}
+.regulations>a{
+	color:#FF4281;
+}
+.btn>input{
+	width:280px;
+	height:35px;
+	font:400 16px "微软雅黑";
+	color:#fff;
+	background-color:#FF4281;
+	border-radius:5px;
+}
+
+
+/*注册条款*/
+.stateBox{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,.8);
+	position:fixed;
+	left: 0;
+	top:0;
+	z-index:999;
+	display:none;
+}
+.stateBox>h1{
+	width:70%;
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	background:#fff;
+	border-radius:10px 10px 0 0;
+	padding:10px;
+	margin:10px auto;
+	margin-bottom:0;
+	position:relative;
+}
+.stateBox>h1>span{
+	width:30px;
+	height:30px;
+	line-height:24px;
+	cursor:pointer;
+	position:absolute;
+	top:10px;
+	right:10px;
+	/*border:2px solid #000;
+	border-radius:50%;*/
+}
+.stateBox>h1>span:hover{
+	-ms-transform:rotateZ(360deg);
+	-moz-transform:rotateZ(360deg);
+	-webkit-transform:rotateZ(360deg);
+	-o-transform:rotateZ(360deg);
+	transform:rotateZ(360deg);
+	-webkit-transition:all 2s;
+	-moz-transition:all 2s;
+	-ms-transition:all 2s;
+	-o-transition:all 2s;
+	transition:all 2s;
+}
+.stateText{
+	width:70%;
+	height:500px;
+	background-color:#fff;
+	border-radius:0 0 10px 10px;
+	padding:10px;
+	margin:1px auto;
+	font:700 30px "微软雅黑";
+	text-align: center;
+	line-height:300px;
+}

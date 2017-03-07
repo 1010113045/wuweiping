@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="images/balance/balance.css"/>
+		<title>确认订单</title>
+	</head>
+	<body>
+		<!--top顶部开始-->
+		<div class="top" id="top">
+			<div class="w clearfix">
+				<ul class="fl">
+					<li>美迪惠尔欢迎您!</li>
+					<li><a href="javascript:?">客服邮箱: china@medihealcos.com</a></li>
+					<li><div class="icon_img"></div></li>
+				</ul>
+				<ul class="fr">
+					<li id="userName"><a href="login.html" class="fl">登录</a><a href="enroll.html" class="fr">/注册</a></li>
+					<li><a href="personal.html">个人中心</a></li>
+					<li><a href="myOrders.html">我的订单</a></li>
+					<li><a href="about.html">关于我们</a></li>
+				</ul>
+			</div>
+		</div><!--top顶部结束-->
+		<!--header头部开始-->
+		<div class="header">
+			<div class="w clearfix">
+				<div class="logo"><a href="index.html"><img src="images/logo.png"/></a></div>
+				<div class="img"><img src="images/shoppingCart/shoppingcar_right.png"/></div>
+			</div>
+		</div>
+
+		<!--main主体开始-->
+		<div class="main">
+			<div class="w">
+				<!--收货地址开始-->
+				<div class="box address">
+					<div class="title">选择配送地址</div>
+					<form action="javascript:;" method="post" class="address_cent">
+						<div class="smallBox" id="userName">
+							<div>收货人：</div>
+							<input type="text" placeholder="收货人的姓名"/>
+							<span class="hint">*(必填)</span>
+						</div>
+						<div class="smallBox">
+							<div>选择地区：</div>
+							<select id="province" onchange="changePro()">
+								<option>省份</option>
+							</select>
+							<select id="city" onclick="changeArea()">
+								<option>地级市</option>
+							</select>
+							<select id="area">
+								<option>选择区</option>
+							</select>
+							<span class="hint"></span>
+						</div>
+						<div class="smallBox" id="amply_address">
+							<div>&nbsp;</div>
+							<input type="text" placeholder="详细地址"/>
+							<span class="hint">*(必填)</span>
+						</div>
+						<div class="smallBox" id="code">
+							<div>邮政编码：</div>
+							<input type="text" placeholder="请输入邮编号码"/>
+							<span class="hint">*(必填)</span>
+						</div>
+						<div class="smallBox" id="phone">
+							<div>联系电话：</div>
+							<input type="text" placeholder="请输入手机号码"/>
+							<span class="hint">*(必填)</span>
+						</div>
+						<div class="smallBox" id="email">
+							<div>联系邮箱：</div>
+							<input type="text" placeholder="请输入常用邮箱"/>
+							<span class="hint"></span>
+						</div>
+						<div class="smallBox">
+							<div>&nbsp;</div>
+							<input type="checkbox"/>
+							<span class="hint">设为默认</span>
+						</div>
+						<div class="smallBox btn" id="btn">
+							<div>&nbsp;</div>
+							<input type="submit" value="保存地址" />
+							<input type="reset" value="取 消" />
+						</div>
+					</form>
+				</div>
+				<!--收货地址结束-->
+				
+				<!--付款方式开始-->
+				<div class="box payment">
+					<div class="title">选择支付方式</div>
+					<div class="fl">
+						<input type="radio" name="pay"/>
+						<img src="images/balance/wxpay.png"/>
+					</div>
+					<div class="fl">
+						<input type="radio" name="pay"/>
+						<img src="images/balance/alipay.png"/>
+						<span>支付宝优惠进行中！</span>
+					</div>
+					<div class="remark">
+						www.medihealshop.com指定Azoya International (Hong Kong) Limited 作为人民币跨境支付代收款方
+					</div>
+				</div>
+				<!--付款方式结束-->
+				
+				<!--所支付的商品信息开始-->
+				<div class="box pays_goods">
+					<div class="title">确认商品信息 <a href="shoppingCart.html">返回购物车></a></div>
+					<ul class="listS">
+						<li class="col-3">商品信息</li>
+						<li class="col-2">单价(单位:元)</li>
+						<li class="col-2">数量(单位:件)</li>
+						<li class="col-2">商品总价(单位:元)</li>
+					</ul>
+				
+					<div class="allGoods">
+						<ul>
+							<li class="col-3 info">
+								<img src="images/shoppingCart/nmf_3.jpg"/>
+								<span><a href="#">美迪惠尔 N.M.F水润保湿面膜 10片装</a></span>
+							</li>
+							<li class="col-2 price">
+								<p>79.00</p>
+							</li>
+							<li class="col-2 line-height number">
+								<span>1</span>
+							</li>
+							<li class="col-2 line-height total">79.00</li>
+						</ul>
+						<ul>
+							<li class="col-3 info">
+								<img src="images/shoppingCart/lineegt5_5_1.jpg"/>
+								<span><a href="#">美迪惠尔 恋朋 E.G.T 修护面膜 5片装</a></span>
+							</li>
+							<li class="col-2 price">
+								<p>26.00</p>
+							</li>
+							<li class="col-2 line-height number">
+								<span>1</span>
+							</li>
+							<li class="col-2 line-height total">26.00</li>
+						</ul>
+						<ul>
+							<li class="col-3 info">
+								<img src="images/shoppingCart/whp_2.jpg"/>
+								<span><a href="#">美迪惠尔 W.H.P美白保湿面膜 10片装</a></span>
+							</li>
+							<li class="col-2 price">
+								<p>85.00</p>
+							</li>
+							<li class="col-2 line-height number">
+								<span>1</span>
+							</li>
+							<li class="col-2 line-height total">85.00</li>
+						</ul>
+					</div>
+					<div class="account">
+						<span>应付金额：</span>
+						<span>￥190.00元</span>
+						<a href="#">确认订单</a>
+					</div>
+				</div>
+				<!--所支付的商品信息结束-->
+			</div>
+		</div><!--main主体结束-->
+		
+		<!--rightsidebar右侧导航开始-->
+		<div class="rightsidebar">
+			<ul>
+				<li><a href="#">官网说明书</a></li>
+				<li><img src="images/rightsidebar_img.png"/></li>
+				<li><a href="#" class="cart"></a></li>
+				<li><a href="#" class="wb"></a></li>
+				<li><a href="#top">TOP不</a></li>
+			</ul>
+		</div><!--rightsidebar右侧导航结束-->
+		
+		<!--footer页尾开始-->
+		<div class="footer">
+			<div class="w clearfix">
+				<div class="footer_left"><img src="images/footer-video.png"/></div>
+				<div class="footer_conter">
+					<div class="footer_content">
+						<ul>
+							<li><a href="#">公司简介</a></li>
+							<li><a href="#">品牌故事</a></li>
+							<li><a href="#">服务条款</a></li>
+							<li><a href="#">国际运费</a></li>
+							<li><a href="#">声明书</a></li>
+						</ul>
+						<p>咨询客服Email：china@medihealcos.com</p>
+						<p>首尔特别市 江西区 江西路 468，401号（登村洞，ACE科技楼）</p>
+						<p>为保护站点版权，禁止盗用网站内容和图片，违者必究。</p>
+						<div class="union icon_img"></div>
+						<div class="alipay icon_img"></div>
+						<div class="wxzf icon_img"></div>
+					</div>
+				</div>
+				<div class="footer_right">
+					<div class="codes"><img src="images/footer_right.jpg"/></div>
+				</div>
+			</div>
+		</div><!--footer页尾结束-->
+	</body>
+	<script src="js/jquery1.12.4.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="images/myOrders/myOrders.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="images/balance/balance.js" type="text/javascript" charset="utf-8"></script>-->
+</html>

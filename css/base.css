@@ -1,0 +1,500 @@
+/*=========@公共样式==============*/
+html,body,div,p,span,ul,ol,li,dl,dd,dt,form,input,textarea,h1,h2,h3,h4,h5,h6,img,a{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:14px;
+	font-family:"microsoft yahei","sans-serif";
+	color:#333;
+}
+.clearfix::before,.clearfix::after{
+	content:"";
+	clear:both;
+	height:0;
+	display:block;
+	visibility:hidden;
+	overflow:hidden;
+}
+input,textarea,button,select{
+	outline-style:none;
+	outline:none;
+	border:none;
+	resize:none;
+	/*appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;*/
+}
+input[type="checkbox"]{
+	-webkit-appearance:checkbox;
+	-moz-appearance:checkbox;
+}
+ul,li{
+	list-style:none;
+}
+a{
+	color:#585858;
+	font-size:12px;
+	font-family:"微软雅黑";
+	text-decoration:none;
+}
+img{
+	vertical-align:middle;/*图片剧中对齐,去除底部边距*/
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.w{
+	width:1190px;
+	margin:0 auto;
+}
+/*icon小图标*/
+.icon_img{
+	background:url(../images/icon.png)no-repeat;
+}
+/*单行文字缩略隐藏*/
+.oddReduce{
+	white-space:nowrap;
+	overflow:hidden;  /*超出部分隐藏*/
+	text-overflow:ellipsis;
+}
+/*多行文字超出隐藏*/
+.evenReduce{
+	overflow:hidden;  /*超出部分隐藏*/
+	text-overflow:ellipsis;
+}
+
+
+
+
+/*========公共结构部分样式============*/
+
+/*顶部部分*/
+.top{
+	width:100%;
+	height:30px;
+	background-color:#f5f5f5;
+}
+.top a:hover{
+	color:#ff4281;
+}
+.top .w{
+	height:30px;
+}
+.top>.w>ul>li{
+	float:left;
+	height:30px;
+	line-height:30px;
+}
+.top>.w>ul.fl>li>a{
+	margin-left:30px;
+}
+.top>.w>ul.fl>li>div.icon_img{
+	width:30px;
+	height:20px;
+	background-position:-338px -73px;
+	margin-top:5px;
+	margin-left:10px;
+}
+.top>.w>ul.fr>li{
+	padding-left:20px;
+}
+.top>.w>ul.fr>li>a{
+	display:block;
+	height:30px;
+}
+
+
+/*头部部分*/
+.header{
+	width:100%;
+	height:126px;
+	background:#fff;
+}
+/*--------------------logo部分w204*/
+.logo{
+	width:204px;
+	height:126px;
+	float:left;
+}
+.logo>a{
+	display:block;
+	height:106px;
+	padding-top:20px;
+}
+/*--------------------icon_img部分w250*/
+.header>.w>.icon_img{
+	width:250px;
+	height:40px;
+	float:left;
+	background-position:-213px 8px;
+	margin:30px 80px;
+}
+/*--------------------search部分w426*/
+.header_search{
+	width:426px;
+	height:126px;
+	float:left;
+}
+.header_search_top{
+	width:100%;
+	height:36px;
+	padding-top:30px;
+}
+.header_search_top>input{
+	width:330px;
+	height:32px;
+	border:1px solid #FF4281;
+	float:left;
+	padding-left:10px;
+	color:#989898;
+}
+.header_search_top>button{
+	width:80px;
+	height:34px;
+	background-color:#FF4281;
+	border:none;
+	color:white;
+	font-size:16px;
+	cursor:pointer;
+}
+.header_search_foot{
+	width:100%;
+	height:23px;
+	line-height:23px;
+}
+.header_search_foot li{
+	float:left;
+	margin-right:20px;
+}
+/*--------------------shopping_cart部分w122*/
+.header_shopping_cart{
+	width:122px;
+	height:38px;
+	/*line-height:38px;*/
+	margin-top:30px;
+	border:1px solid #D8D8D8;
+	float:right;
+	/*text-align:center;*/
+	position:relative;
+}
+.header_shopping_cart>span.icon_img{
+	width:22px;
+	height:23px;
+	background-position:-441px -32px;
+	position:absolute;
+	top:7px;
+	left:5px;
+}
+.header_shopping_cart>span.shopping_num{
+	width:26px;
+	height:26px;
+	line-height:26px;
+	border-radius:26px;
+	text-align:center;
+	color:white;
+	background-color:#FF4281;
+	position:absolute;
+	top:-13px;
+	left:20px;
+}
+.header_shopping_cart>span{
+	width:80px;
+	height:38px;
+	line-height:38px;
+	font-size:14px;
+	font-family: "微软雅黑";
+	text-align:center;
+	position:absolute;
+	right:5px;
+	top:0;
+}
+
+/*nav菜单部分*/
+.nav{
+	width:100%;
+	height:42px;
+	background-color:#ff4281;
+}
+/*--------------------shopping_menu商品目录*/
+.shopping_menu{
+	width:180px;
+	height:40px;
+	padding-top:4px;
+	background-color:#fd4a86;
+	border-radius:5px 5px 0px 0px;
+	position:relative;
+	top:-4px;
+	float:left;
+}
+.shopping_menu>span{
+	display:block;
+	width:180px;
+	height:42px;
+	line-height:42px;
+	text-align:center;
+	color:#fff;
+}
+.shopping_menu_box{
+	width:180px;
+	height:405px;
+	background-color:#fff;
+}
+.shopping_menu_box>ul{
+	width:70%;
+	height:405px;
+	margin:0 auto;
+}
+.shopping_menu_box>ul li{
+	width:100%;
+	height:100px;
+	border-bottom:1px solid #D8D8D8;
+}
+.shopping_menu_box>ul li:last-child{
+	border: none;
+}
+.shopping_menu_box>ul li a{
+	display:block;
+	width:100%;
+	height:20px;
+	line-height:20px;
+}
+.shopping_menu_box>ul li a:first-child{
+	color:#383838;
+	font-size:14px;
+	font-weight:bold;
+	height:40px;
+	line-height:40px;
+}
+.shopping_menu_box>ul li a:hover{
+	color:#F23A77;
+}
+/*--------------------nav导航部分*/
+.nav .w>ul li{
+	height:40px;
+	line-height:40px;
+	float:left;
+}
+.nav .w>ul li a{
+	display:block;
+	padding:0px 30px;
+	color:white;
+	font-size:14px;
+}
+.nav .w>ul li a:hover{
+	background-color:#f23a77;
+}
+
+
+
+/*---------------------------主体部分main*/
+.main{
+	width:100%;
+	background-color:#f5f5f5;
+	overflow:hidden;
+}
+
+
+/*+++++++++右侧导航样式++++++++++*/
+.rightsidebar{
+	width:70px;
+	height:266px;
+	position:fixed;
+	right:3px;
+	bottom:100px;
+	border:1px solid #E8E8E8;
+	display:none;
+	z-index:99;
+}
+.rightsidebar ul li{
+	width: 100%;
+	height:58px;
+	line-height:58px;
+	text-align:center;
+	border-bottom:1px solid #E8E8E8;
+	background-color:white;
+}
+.rightsidebar>ul>li>a{
+	display:block;
+	height:58px;
+	position:relative;
+}
+.rightsidebar>ul>li>a.cart::before{
+	content:"";
+	width:22px;
+	height:24px;
+	background:url(../images/icon.png)no-repeat;
+	background-position:-441px -32px;
+	position:absolute;
+	left:35%;
+	top:15%;
+}
+.rightsidebar>ul>li>a.cart::after{
+	content:"购物车";
+	position:absolute;
+	left:30%;
+	top:25%;
+}
+.rightsidebar>ul>li>a.wb::before{
+	content:"";
+	width:28px;
+	height:22px;
+	background:url(../images/icon.png)no-repeat;
+	background-position:-310px -72px;
+	position:absolute;
+	left:30%;
+	top:15%;
+}
+.rightsidebar>ul>li>a.wb::after{
+	content:"微博";
+	position:absolute;
+	left:35%;
+	top:25%;
+}
+.rightsidebar ul li:last-child,
+.rightsidebar ul li:last-child>a{
+	height:30px;
+	line-height:30px;
+	background-color:#333333;
+	color:#fff;
+}
+
+
+/*+++++++++底部样式++++++++++*/
+.footer{
+	width:100%;
+	height:250px;
+	border-top:1px solid #E8E8E8;
+}
+.footer_left,.footer_conter,.footer_right{
+	height:250px;
+	float:left;
+}
+.footer_left{
+	width:320px;
+	line-height:250px;
+}
+.footer_conter{
+	width:600px;
+}
+.footer_content{
+	width:500px;
+	height:190px;
+	position:relative;
+	top:38px;
+	margin:0 auto;
+}
+.footer_content ul{
+	height:32px;
+	border-bottom:1px solid #E8E8E8;
+	margin-bottom:30px;
+}
+.footer_content ul li{
+	float:left;
+	margin-right:20px;
+}
+.footer_content ul li a{
+	color:#383838;
+	font-size:14px;
+	font-weight:bold;
+}
+.footer_content ul li a:hover{
+	text-decoration:underline;
+}
+.footer_content p{
+	margin:15px 0px;
+	font-size:12px;
+	color:#585858;
+}
+.union.icon_img{
+	width:130px;
+	height:40px;
+	background-position:0px -108px;
+	float:left;
+	margin-right:5px;
+}
+.alipay.icon_img{
+	width:130px;
+	height:40px;
+	background-position:-214px -32px;
+	float:left;
+	margin-right:5px;
+}
+.wxzf.icon_img{
+	width:130px;
+	height:40px;
+	background-position:-128px -108px;
+	float:left;
+}
+.footer_right{
+	width:270px;
+}
+.codes{
+	width:118px;
+	height:118px;
+	line-height:118px;
+	border:1px solid #E8E8E8;
+	margin:30px auto;
+	position:relative;
+}
+.codes::before{
+	content:"扫码关注";
+	height:20px;
+	position:absolute;
+	bottom:20px;
+	left:30%;
+}
+.codes::after{
+	content:"官方微信";
+	height:20px;
+	position:absolute;
+	bottom:0;
+	left:30%;
+}
+
+
+
+/*========小功能公共部分样式============*/
+/*权限提示框开始*/
+.reminderBox{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,.5);
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:999;
+}
+.reminderBox>.centerBox{
+	width:320px;
+	height:160px;
+	background-color:rgba(250,250,250,1);
+	border-radius:10px;
+	padding:10px;
+	margin:20% auto;
+}
+.reminderBox>.centerBox>.centerBoxText{
+	width:100%;
+	height:60%;
+	font:400 18px/100px "微软雅黑";
+	text-align:center;
+}
+.reminderBox>.centerBox>.centerBoxButton{
+	width:100%;
+	height:40%;
+	line-height:350%;
+	text-align:center;
+}
+.reminderBox>.centerBox>.centerBoxButton>button{
+	width:80px;
+	height:30px;
+	border-radius:5px;
+	background-color:rgba(255,66,129,.9);
+	margin:0 5px;
+	color:#fff;
+	font:700 14px "微软雅黑";
+}
+/*权限提示框结束*/

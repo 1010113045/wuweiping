@@ -1,0 +1,101 @@
+.header{
+	border-bottom:1px solid #D8D8D8;
+}
+.header>.w{
+	padding:0;
+}
+.header>.w>.icon_img{
+	float:right;
+	margin:30px 0;
+}
+
+
+.main{
+	background-color:#fff;
+}
+.main>.w{
+	padding-top:100px;
+}
+.main>.w>.fl{
+	width:50%;
+	height:500px;
+	text-align:center;
+	position:relative;
+}
+.main>.w>.fl::before{
+	content:"";
+	width:1px;
+	height:400px;
+	background-color:#D8D8D8;
+	position:absolute;
+	right:0;
+}
+
+
+.main>.w>.fr{
+	width:50%;
+	height:500px;
+	
+}
+.main>.w>.fr>form{
+	width:280px;
+	height:400px;
+	padding-left:80px;
+}
+.font_title{
+	width:280px;
+	padding-bottom:20px;
+}
+.font_title>h3{
+	display:inline-block;
+}
+.font_title>span{
+	float:right;
+	color:#585858;
+}
+.font_title>span>a{
+	font-size:14px;
+	color:#ff4281;
+}
+.main>.w>.fr>form input{
+	width:270px;
+	height:35px;
+	border:1px solid #D8D8D8;
+	padding-left:10px;
+}
+.font_name,.font_pwd,.btn,.loginMode{
+	padding:15px 0;
+}
+.help{
+	text-align:right;
+}
+.help>a{
+	text-decoration:underline;
+}
+.btn>input{
+	width:280px;
+	height:35px;
+	font:400 16px "微软雅黑";
+	color:#fff;
+	background-color:#FF4281;
+	border-radius:5px;
+}
+.loginMode>a{
+	width:32px;
+    height:32px;
+    display:inline-block;
+    background:url(../icon.png)no-repeat;
+    margin:5px 5px;
+}
+.loginMode>a:nth-child(2){
+	background-position: -409px -32px;
+}
+.loginMode>a:nth-child(3){
+	background-position: -214px -72px;
+}
+.loginMode>a:nth-child(4){
+	background-position: -377px -32px;
+}
+.loginMode>a:nth-child(5){
+	background-position: -278px -72px;
+}

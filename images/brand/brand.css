@@ -1,0 +1,19 @@
+/*隐藏shopping_menu_box*/
+.shopping_menu_box{
+	display:none;
+}
+.shopping_menu{
+	cursor:pointer;
+}
+.shopping_menu:hover .shopping_menu_box{
+	display:block;
+}
+
+.main>.w{
+	text-align:center;
+	margin:50px auto;
+}
+.main>.w>img{
+	box-shadow:0 0 10px 5px #E9E9E9;
+	border-radius:0 100px 0 100px;
+}

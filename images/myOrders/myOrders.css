@@ -1,0 +1,269 @@
+/*隐藏shopping_menu_box*/
+.shopping_menu_box{
+	display:none;
+}
+.shopping_menu{
+	cursor:pointer;
+}
+.shopping_menu:hover .shopping_menu_box{
+	display:block;
+}
+
+/*main部分开始*/
+.main>.w{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+/*-------------------------左边内容样式开始*/
+.main>.w>.fl{
+	width:150px;
+	height:250px;
+	background-color:#fff;
+}
+.main>.w>.fl>.nav_title{
+	width:110px;
+	height:50px;
+	margin:0 auto;
+	border-bottom:1px solid #E8E8E8;
+	font:700 16px/50px "微软雅黑";
+}
+.main>.w>.fl>ul.menu{
+	width:110px;
+	margin:0 auto;
+}
+.main>.w>.fl>ul.menu>li{
+	height:30px;
+	line-height:30px;
+}
+
+
+/*===========右边内容公共部分样式开始=============*/
+/*---------------------------被选中的字体颜色*/
+.main>.w .aColor{
+	color:#FF4281;
+}
+.main>.w>.fr{
+	width:980px;
+	height:500px;
+	background-color:#fff;
+	padding:20px;
+}
+.main>.w>.fr>.box{
+	width:100%;
+}
+.main>.w>.fr>.box>.title{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #D8D8D8;
+	font-weight:bold;
+}
+.main>.w>.fr>.box .hint{
+	padding-left:10px;
+	color:#989898;
+}
+/*===========右边内容公共部分样式结束=============*/
+
+
+
+
+/*-----------------------------我的订单开始*/
+.main>.w>.fr>.orders{
+	display:block;
+}
+.main>.w>.fr>.orders>.orders_menu{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #D8D8D8;
+	overflow:hidden;
+}
+.main>.w>.fr>.orders>.orders_menu>li{
+	float:left;
+	width:120px;
+	text-align:center;
+}
+.main>.w>.fr>.orders>.orders_menu>li>a{
+	font-size:16px;
+	font-weight:bold;
+}
+.main>.w>.fr>.orders>.order_cent{
+	width:100%;
+	height:450px;
+	line-height:300px;
+	text-align:center;
+}
+.main>.w>.fr>.orders>.order1,
+.main>.w>.fr>.orders>.order2,
+.main>.w>.fr>.orders>.order3,
+.main>.w>.fr>.orders>.order4{
+	display:none;
+}
+
+/*-----------------------------我的收藏夹开始*/
+.main>.w>.fr>.favorites{
+	display:none;
+}
+.main>.w>.fr>.favorites>.faverites_cent{
+	text-align:center;
+	padding-top:150px;
+	font-size:16px;
+}
+
+
+
+/*-----------------------------我的优惠卷开始*/
+.main>.w>.fr>.coupon{
+	display:none;
+}
+.main>.w>.fr>.coupon>.coupon_cent{
+	width:100%;
+	border:1px solid #E8E8E8;
+}
+.main>.w>.fr>.coupon>.coupon_cent>.coupon_cent_top{
+	width:100%;
+	height:110px;
+	line-height:110px;
+	text-align:center;
+	background-color:#f3f3f3;
+	font-size:18px;
+}
+.main>.w>.fr>.coupon>.coupon_cent>.coupon_cent_top>input[type="text"]{
+	width:300px;
+	height:40px;
+	padding-left:10px;
+	margin:0 10px;
+	border-radius:3px;
+}
+.main>.w>.fr>.coupon>.coupon_cent>.coupon_cent_top>input[type="submit"]{
+	width:90px;
+	height:36px;
+	border-radius:3px;
+	background-color:#FF4281;
+	color:#fff;
+	font-size:16px;
+	cursor:pointer;
+}
+.main>.w>.fr>.coupon>.coupon_cent>.coupon_cent_menu{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #E8E8E8;
+	padding-top:20px;
+}
+.main>.w>.fr>.coupon>.coupon_cent>.coupon_cent_menu>li{
+	float:left;
+	width:180px;
+	text-align:center;
+}
+.main>.w>.fr>.coupon>.coupon_cent>.coupon_cent_menu>li>a{
+	font-size:16px;
+}
+.main>.w>.fr>.coupon>.coupon_cent>.coupon_cent_cent{
+	width:100%;
+	text-align:center;
+	padding-top:100px;
+	padding-bottom:170px;
+}
+
+
+/*-----------------------------收货地址开始*/
+.main>.w>.fr>.address{
+	display:none;
+}
+.main>.w>.fr>.address>.address_cent{
+	width:100%;
+	height:300px;
+}
+.main>.w>.fr>.address>.address_cent>.smallBox{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	padding:5px 0;
+}
+.main>.w>.fr>.address>.address_cent>.smallBox>div{
+	display:inline-block;
+	width:100px;
+	height:100%;
+	text-align:right;
+}
+.main>.w>.fr>.address>.address_cent>.smallBox>input{
+	width:236px;
+	height:30px;
+	padding-left:10px;
+	border:1px solid #D8D8D8;
+}
+.main>.w>.fr>.address>.address_cent>.smallBox select{
+	display:inline-block;
+	height:30px;
+	width:80px;
+	border:1px solid #D8D8D8;
+}
+.main>.w>.fr>.address>.address_cent>.smallBox>input[type="checkbox"]{
+	width:12px;
+	height:12px;
+}
+.main>.w>.fr>.address>.address_cent>.smallBox.btn>input{
+	width:120px;
+	height:35px;
+	border-radius:5px;
+	background-color:#ff4281;
+	font-size:16px;
+	color:#fff;
+	cursor:pointer;
+}
+.main>.w>.fr>.address>.address_cent>.smallBox.btn>input[type="reset"]{
+	color:#ff4281;
+	background-color:#fff;
+	border:1px solid #ff4281;
+}
+
+
+/*-----------------------------账户信息开始*/
+.main>.w>.fr>.userInfo{
+	display:none;
+}
+.main>.w>.fr>.userInfo>.userInfo_cent{
+	padding-top:50px;
+}
+.main>.w>.fr>.userInfo>.userInfo_cent>div{
+	width:100%;
+	height:40px;
+	line-height:40px;
+}
+
+/*-----------------------------重置密码开始*/
+.main>.w>.fr>.resetPwd{
+	display:none;
+}
+.main>.w>.fr>.resetPwd>.resetPwd_cent{
+	width:100%;
+	padding-top:50px;
+}
+.main>.w>.fr>.resetPwd>.resetPwd_cent>.smallBox{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	padding:5px 0;
+}
+.main>.w>.fr>.resetPwd>.resetPwd_cent>.smallBox>div{
+	display:inline-block;
+	width:100px;
+	height:100%;
+	text-align:right;
+}
+.main>.w>.fr>.resetPwd>.resetPwd_cent>.smallBox>input{
+	width:236px;
+	height:30px;
+	padding-left:10px;
+	border:1px solid #D8D8D8;
+}
+.main>.w>.fr>.resetPwd>.resetPwd_cent>.smallBox.btn>input{
+	width:120px;
+	height:35px;
+	border-radius:5px;
+	background-color:#ff4281;
+	font-size:16px;
+	color:#fff;
+	cursor:pointer;
+}

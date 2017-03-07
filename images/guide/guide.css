@@ -1,0 +1,17 @@
+/*隐藏shopping_menu_box*/
+.shopping_menu_box{
+	display:none;
+}
+.shopping_menu{
+	cursor:pointer;
+}
+.shopping_menu:hover .shopping_menu_box{
+	display:block;
+}
+
+
+.main>.w{
+	padding:200px 0;
+	text-align:center;
+	font:700 30px "微软雅黑";
+}

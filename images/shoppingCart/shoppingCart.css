@@ -1,0 +1,157 @@
+.header{
+	border-bottom:1px solid #D8D8D8;
+}
+.header>.w>.img{
+	float:right;
+	margin:30px 0;
+}
+
+
+
+/*共同样式部分开始*/
+.col-1{
+	width:140px;
+	text-align:center;
+}
+.col-2{
+	width:200px;
+	text-align:center;
+}
+.col-3{
+	width:400px;
+	padding-left:50px;
+}
+.line-height{
+	line-height:120px;
+}
+/*共同样式部分结束*/
+
+
+
+.main{
+	background-color:#fff;
+}
+.main>.w{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+/*列表标题*/
+.main>.w>ul.title{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background-color:#f3f4f5;
+	border-radius:25px 25px 0 0;
+}
+.main>.w>ul.title>li{
+	float:left;
+	text-align:center;
+}
+
+/*全选按钮*/
+.main>.w>.allChoose{
+	width:95%;
+	height:50px;
+	line-height:50px;
+	padding-left:4%;
+	font-weight:bold;
+	font-size:18px;
+}
+.main>.w>.allChoose>input{
+	margin-right:5px;
+}
+
+/*全部商品列表*/
+.main>.w>.allGoods{
+	width:100%;
+	background:#D8D8D8;
+}
+.main>.w>.allGoods>ul{
+	width:100%;
+	height:120px;
+	margin-bottom:1px;
+	background-color:#fff6f9;
+}
+.main>.w>.allGoods>ul>li{
+	float:left;
+}
+
+/*商品信息*/
+.main>.w>.allGoods>ul>li.col-3{
+	height:120px;
+	line-height:120px;
+}
+.main>.w>.allGoods>ul>li.col-3>img{
+	margin:0 10px;
+}
+
+/*单价*/
+.main>.w>.allGoods>ul>li>p{
+	width:100%;
+	height:30px;
+}
+.main>.w>.allGoods>ul>li>p:first-child{
+	margin-top:35px;
+	font-weight:bold;
+	font-size:18px;
+}
+.main>.w>.allGoods>ul>li>p:last-child{
+	text-decoration: line-through;
+	color:#989898;
+}
+
+/*数量*/
+.main>.w>.allGoods>ul>li.number>button{
+	width:20px;
+	height:20px;
+	border-radius:5px;
+	color:#fff;
+	cursor:pointer;
+}
+.main>.w>.allGoods>ul>li.number>input{
+	width:30px;
+	height:20px;
+	text-align:center;
+	background-color:#fff6f9;
+}
+
+/*产品总价*/
+.main>.w>.allGoods>ul>li.total{
+	font-weight:bold;
+	font-size:16px;
+}
+
+
+/*删除商品*/
+.main>.w>.allGoods>ul>li.del>a{
+	font-size:16px;
+	color:#FF4281;
+}
+
+/*结算*/
+.main>.w>.account{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	/*border:1px solid #D8D8D8;*/
+	border-radius:0 0 25px 25px;
+	background-color:#f3f4f5;
+	margin:20px 0;
+	text-align:right;
+}
+.main>.w>.account>span:nth-child(2){
+	color:#FF4281;
+	font-size:20px;
+}
+.main>.w>.account>a{
+	display:inline-block;
+	width:100px;
+	height:46px;
+	background-color:rgb(255, 66, 129);
+	border-radius:0 0 25px 0;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	margin-left:50px;
+}
